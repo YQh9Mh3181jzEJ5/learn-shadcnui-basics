@@ -5,7 +5,7 @@ export default function Home() {
     <main className="p-24">
       <section>
         <h1 className="font-medium text-3xl py-4">
-          ようこそ！Shadcn/uiを使ったページ！
+          ようこそ！Shadcn/uiを使ったチュートリアルページです！
         </h1>
         <article className="mb-6">
           <p className="mb-2">
