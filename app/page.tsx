@@ -8,16 +8,29 @@ export default function Home() {
         <div className="mb-2">
           <p>このページは、Next.js と Vite を使って作成されました。</p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            culpa suscipit veritatis ipsam voluptatum. Repellat natus libero eos
-            explicabo dolore quisquam voluptatum, quos quasi harum laboriosam
-            ducimus ratione maxime! Pariatur?
+            また、Shadcn/uiというコンポーネントライブラリを使用しています。
+            このライブラリは、Radix UI と Tailwindをベースにしています。
           </p>
+          <h3 className="font-normal py-2">使用しているコンポーネント</h3>
+          <ul>
+            <li>
+              <p>button</p>
+            </li>
+            <li>
+              <p>dropdown-menu</p>
+            </li>
+            <li>
+              <p>navigation-menu</p>
+            </li>
+            <li>
+              <p>darkmode</p>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="flex gap-4 items-center">
-        <Button>Click Here!</Button>
-        <Button>Click Here!</Button>
+        <Button>これがbuttonコンポーネント</Button>
+        <Button>これがbuttonコンポーネント</Button>
       </div>
     </main>
   );
