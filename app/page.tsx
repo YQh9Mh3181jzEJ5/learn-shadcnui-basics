@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <main className="p-24">
       <section>
-        <h1 className="font-medium text-3xl py-4">ようこそ！</h1>
+        <h1 className="font-medium text-3xl py-4">
+          ようこそ！Shadcn/uiを使ったページ！
+        </h1>
         <article className="mb-6">
           <p className="mb-2">
             このページは、Next.js と Vite を使って作成されました。
