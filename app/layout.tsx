@@ -18,18 +18,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={NotoSansJP.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            {children}
-          </main>
-        </ThemeProvider>
+      <body
+        className={`${NotoSansJP.className} bg-cover bg-center bg-fixed`}
+        style={{
+          backgroundImage: "url('/images/background.jpg')",
+        }}
+      >
+        <div className="bg-balck/10 backdrop-blur-sm min-h-screen">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              {children}
+            </main>
+          </ThemeProvider>
+        </div>
       </body>
     </html>
   );
